@@ -1,0 +1,225 @@
+#widget-container {
+  position: relative !important;
+  display: block !important;
+  margin: 0;
+  z-index: 100 !important;
+  opacity: 1;
+  max-width: 300px;
+  left:-500px;
+  overflow: visible !important;
+}
+
+
+
+#widget-container .refresh  {
+  max-width: 280px;
+  text-decoration: none;
+  cursor: default;
+  padding: 15px 15px 5px 5px;
+  margin-bottom: 3px;
+  position: relative;
+  min-height: 85px;
+  border-radius: 0 20px 20px 0;
+  font-family: Arial;
+}
+
+#widget-container section {
+  margin-left: 100px;
+  padding: 0 0 0 10px;
+}
+
+#widget-container h2 {
+  -webkit-margin-before: 3px;
+  -webkit-margin-after: 3px;
+  -webkit-margin-start: 3px;
+  -webkit-margin-end: 3px;
+  margin: 0;
+  padding: 0;
+  font-size: 21px;
+  line-height: 25px;
+  direction: ltr;
+}
+#widget-container .user_photo {
+  position: absolute;
+  padding: 0 0 0 10px;
+  left: 0;
+  width: 85px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  z-index: 10 !important;
+}
+
+#widget-container .user_photo img {
+  width: inherit;
+  border-radius: 50%;
+  z-index: 9 !important;
+  border: 2px solid rgba(0, 0, 0, 0.25);
+  background-color: whitesmoke;
+  left: 10%;
+  position: relative;
+}
+
+#widget-container .spotlightLinks{
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  position: relative;
+  z-index: 8 !important;
+  border-radius: 10em;
+  margin-left: 5px;
+  margin-bottom: 5px;
+  opacity: 1;
+  background-position: center center;
+  background-repeat: no-repeat;
+  box-shadow: 0 1px 3px;
+  border: solid 1px;
+  color: #fff;
+  cursor: pointer;
+
+}
+
+#widget-container .callForActionBtn{
+  display: inline-block;
+  height: 14px;
+  position: relative;
+  z-index: 8 !important;
+  border-radius: 5px;
+  margin-left: 0;
+  margin-bottom: 5px;
+  opacity: 1;
+  box-shadow: 0 1px 3px;
+  cursor: pointer;
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 15px 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 14px;
+
+}
+
+#widget-container .callForActionWrapper{
+  display: none;
+  margin-top: 5px;
+}
+
+#widget-container .apps {
+  display: none;
+  max-width: inherit;
+  z-index: 8 !important;
+  text-align: center;
+}
+
+#widget-container .text {
+
+  display: none;
+  color: #fff;
+  font-size: 13px;
+  text-align: center !important;
+  direction: ltr;
+  z-index: 6 !important;
+  top:0;
+  padding:0 10px 10px 10px;
+
+}
+#widget-container .byPipls{
+
+  color: #999;
+  font-size: 10px;
+  font-family: Arial;
+  text-decoration: none;
+  padding-left: 10px;
+  text-align: left;
+
+}
+#widget-container .byPipls a{
+
+  text-decoration: none;
+  color: #999;
+  font-size: 10px;
+  font-weight: bold;
+
+}
+
+#widget-container .facebook {
+
+  background: center no-repeat url(facebook-logo-button.png);
+
+}
+#widget-container .twitter {
+
+  background: center no-repeat url(twitter.png);
+
+}
+#widget-container .youtube {
+
+  background:center no-repeat url(youtube-logotype.png);
+
+}
+
+
+.guidance {
+  width: 20%;
+  opacity: 0;
+  float: right;
+  font-size: 20px;
+  -webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
+  transition: width 2s;
+  display: none;
+  -webkit-animation: fadeIn 1s;
+}
+.article{
+  width: 80%;
+  float: right;
+  -webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
+  transition: width 2s ;
+  }
+
+.article img{
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  border:0;
+}
+
+/* responsive text queries */
+@media screen and (max-width: 850px) {
+ #guidance{
+    font-size: 95%;
+  }
+  .btn {
+    padding:2px 4px;
+    font-size:95%;
+    line-height: 1;
+    border-radius:3px;
+  }
+
+  #widget-container .refresh {
+    padding: 5px 5px 5px 5px;
+  }
+  #widget-container .user_photo {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 590px) {
+  .guidance {
+    width: inherit;
+    float: none;
+  }
+  .article {
+    width: inherit;
+    float: none;
+  }
+  #signMeUp{
+    margin-bottom: 15px;
+  }
+  #widget-container .refresh {
+    padding: 1px 1px 1px 1px;
+  }
+  #widget-container .user_photo {
+    width: 40%;
+  }
+}
